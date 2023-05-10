@@ -39,10 +39,12 @@
 
       <br />
       <!-- mouse events -->
-      <div class="box" @mouseover="handleEvent">mouse over</div>
+      <div class="box" @mouseover="handleEvent($event, 5)">mouse over</div>
       <div class="box" @mouseleave="handleEvent">mouse leave</div>
       <div class="box" @dbclick="handleEvent">double click</div>
-      <div class="box" @></div>
+      <div class="box" @mousemove="handleMousemove">
+        position - {{ x }} {{ y }}
+      </div>
     </div>
 
     <script src="app.js"></script>
