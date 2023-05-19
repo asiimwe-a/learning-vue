@@ -9,3 +9,7 @@ p {
 h1 {
   font-size: larger;
 }
+
+div {
+  margin: 0;
+}
