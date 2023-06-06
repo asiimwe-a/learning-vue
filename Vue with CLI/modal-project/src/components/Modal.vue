@@ -1,10 +1,17 @@
 <template>
   <div class="backdrop">
     <div class="modal">
-      <p>modal content</p>
+      <h1>{{ header }}</h1>
+      <p>{{ text }}</p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ["header", "text"],
+};
+</script>
 
 <style>
 .modal {
@@ -21,6 +28,11 @@
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+}
+
+.modal h1 {
+  color: #03cfb4;
+  border: none;
 }
 
 p {
